@@ -1,0 +1,34 @@
+.themeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    min-height: 100vh;
+    background: var(--background);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 960px;
+    background: var(--background);
+}
+
+.infinite-scroll-component {
+    display: grid;
+    grid-gap: 30px;
+    justify-content: center;
+
+    @media (min-width: 360px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (min-width: 630px) {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(3, 300px);
+    }
+}

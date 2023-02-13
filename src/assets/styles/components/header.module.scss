@@ -1,0 +1,91 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    background: var(--primary);
+    margin-bottom: 48px;
+
+    &Heading {
+        font-size: 20px;
+        color: var(--base);
+    }
+
+    &ThemeSwitcher {
+        margin-left: 40px;
+        text-align: left;
+        border-radius: 8px;
+        padding: 4px 8px;
+        width: 160px;
+        background: var(--base);
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover {
+            background: var(--buttonActive);
+            color: var(--base);
+        }
+    }
+
+    &Cart {
+        margin-right: 40px;
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        justify-content: flex-end;
+
+        &Amount {
+            font-size: 12px;
+            border-radius: 99px;
+            background: var(--base);
+            text-align: center;
+            min-width: 22px;
+            min-height: 19px;
+            padding: 2px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 2;
+            box-sizing: border-box;
+        }
+
+        &Icon {
+            cursor: pointer;
+            width: 30px;
+            height: 28px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            filter: invert(1);
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: auto;
+        grid-gap: 14px; 
+
+        &Heading,
+        &ThemeSwitcher,
+        &Cart {
+            margin: 0;
+        }
+
+        &Heading {
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+
+        &Cart {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        &ThemeSwitcher {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    }
+}

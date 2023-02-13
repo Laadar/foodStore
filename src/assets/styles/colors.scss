@@ -1,0 +1,37 @@
+// Colors pack
+
+.light-theme {
+    --base: #ffffff;
+    --baseInverted: #000000;
+    --primary: #896e69;
+    --secondary: #d8b389;
+    --background: #ffffff;
+    --primaryActive: #6e5854;
+    --separators: #dadadf;
+    --borders: #d2d2d7;
+    --mainFont: #8f736b;
+    --headingFont: #d55448;
+    --button: #cf4134;
+    --buttonActive: #a5251a;
+    --dialog: #ffffff;
+    --input: #ffffff;
+    --disabled: #5d5f61;
+}
+
+.dark-theme {
+    --base: #FFFFFF;
+    --baseInverted: #ffffff;
+    --primary: #71aaeb;
+    --secondary: #454647;
+    --background: #19191a;
+    --primaryActive: #6e5854;
+    --separators: #dadadf;
+    --borders: #d2d2d7;
+    --mainFont: #FFFFFF;
+    --headingFont: #FFFFFF;
+    --button: #cf4134;
+    --buttonActive: #a5251a;
+    --dialog: #fff8e6;
+    --input: #909499;
+    --disabled: #5d5f61;
+}
